@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Task Board</h1>
+            <p>Productivity Manager</p>
+        </div>
+
+        <button id="favoriteButton">
+          &#9825 Favorites
+        </button>
+    </header>
+  <main>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="submit"> Search </button>
+
+        </form>
+        
+        <div id="message"></div>
+        <div class="content">
+
+            <section class="main-section">
+                <h2>Main Data</h2>
+                <div
+                    id="todos"
+                    class="grid"
+                ></div>
+
+            </section>
+
+            <section class="favorites-section">
+                <h2>Favorites</h2>
+                <div
+                    id="favorites"
+                    class="favorites-grid"
+                ></div>
+
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
